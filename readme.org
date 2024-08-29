@@ -1,0 +1,14 @@
+* SmartCityFarm
+
+http://smartcityfarm.de
+
+This project is possible future home of SmartCityFarm project. Right now it has:
+
+1. Beitrittsformular
+
+   A 'view only' copy of the farm. Task was to create a form for new members to join the
+   association. When Onlyoffice turned to be too unwieldy, I reached for the trusty html+css.
+   Printable form can be obtained by pressing =Ctrl+p= (=Cmd+p= on MacOS)
+
+
+This project is accessible at: https://solarpunk-berlin.github.io/smartcityfarm/
