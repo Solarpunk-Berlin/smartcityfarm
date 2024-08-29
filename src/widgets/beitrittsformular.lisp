@@ -26,11 +26,11 @@
 
      `((body :color (var --color-grey-800))
        (.container :width (var --width-md)
-                   :margin (var --scale-8) auto)
+                   :margin (var --scale-4) auto)
 
        (.title
         :font-size (var --scale-6)
-        :margin (var --scale-6) 0)
+        :margin (var --scale-4) 0)
 
        (.row
         :margin (var --scale-2) 0
