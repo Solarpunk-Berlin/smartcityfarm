@@ -108,7 +108,7 @@
                (:div "* Pflichtfelder : diese Felder müssen ausgefüllt werden!"))
 
               (:div.disclaimer
-               (:p "Ich habe die Satzung des SmartCityFarm e.V. zur Kenntnis genommen und erkenne sie mit meiner Unterschrift an. Ich werde keinerlei Aktivitäten unternehmen, die der Vereinssatzung sowie den Beschlüssen der Mitgliederversammlung, des circles oder des Vorstandes zuwiderlaufen. Ich erkläre mich damit einverstanden, dass meine Daten für vereinsinterne Zwecke erfaßt und elektronisch gespeichert und verarbeitet werden. Mir ist bekannt, dass ich die Mitgliedschaft jederzeit durch eine SCHRIFTLICHE Mitteilung an den Vorstand beenden kann."))
+               (:p "Ich habe die Satzung des SmartCityFarm e.V. zur Kenntnis genommen und erkenne sie mit meiner Unterschrift an. Ich werde keinerlei Aktivitäten unternehmen, die der Vereinssatzung sowie den Beschlüssen der Mitgliederversammlung oder des Vorstandes zuwiderlaufen. Ich bin damit einverstanden, 10 EUR als Aufnahmegebühr und 5 EUR als monatliche Gebühr zu zahlen. Ich erkläre mich damit einverstanden, dass meine Daten für vereinsinterne Zwecke erfaßt und elektronisch gespeichert und verarbeitet werden. Mir ist bekannt, dass ich die Mitgliedschaft jederzeit durch eine SCHRIFTLICHE Mitteilung an den Vorstand beenden kann."))
 
               (:div
                (:div.row :style "margin-bottom: 0.4rem;"
