@@ -1,5 +1,25 @@
 (in-package #:de.smartcityfarm.website)
 
+(defwidget doc-header-w ()
+    (tagged-lass
+     `((.doc-header
+        :display flex
+        :justify-content space-between
+
+        (.brand :font (var --font-title)
+                :font-weight (var --weight-bold)
+                :font-size (var --scale-4))
+
+        (p :margin 0))))
+  (:div.doc-header
+   (:div.brand "SmartCityFarm")
+
+   (:div.address
+    (:p "SmartCityFarm e.V.")
+    (:p "Reuterstr. 49")
+    (:p "12047 Berlin")
+    (:p "hi@1769.eu"))))
+
 (defwidget scf-form-w (title css-file-artifact)
     (tagged-lass
      (base-lass)
@@ -44,6 +64,7 @@
           (when css-file-artifact (:link :rel "stylesheet" :href (embed-artifact-as css-file-artifact 'link))))
    (:body
     (:div.container
+     (render 'doc-header-w)
      (:section
       (:header (:h1.title title))
       (:main (:form

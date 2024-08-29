@@ -15,7 +15,7 @@
 (defparameter *fonts-dir*
   (asdf:system-relative-pathname "de.smartcityfarm.website" "src/fonts/"))
 
-;; (defparameter *base-url* "/")
+;; (defparameter *base-url* "")
 (defparameter *base-url* "https://solarpunk-berlin.github.io/smartcityfarm")
 
 (defparameter *base-dir* (asdf:system-relative-pathname :de.smartcityfarm.website ""))
