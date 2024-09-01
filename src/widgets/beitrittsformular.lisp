@@ -16,9 +16,9 @@
 
    (:div.address
     (:p "SmartCityFarm e.V.")
+    (:p "c/o David Zehnter")
     (:p "Reuterstr. 49")
-    (:p "12047 Berlin")
-    (:p "hi@1769.eu"))))
+    (:p "12047 Berlin"))))
 
 (defwidget scf-form-w (title css-file-artifact)
     (tagged-lass
@@ -56,8 +56,8 @@
               :color (var --color-grey-500))
 
        (.disclaimer :font-size (var --size-4)
-                    :color (var --color-grey-600)
-                    :margin (var --scale-6) 0)))
+                    :padding 0 1rem
+                    :color (var --color-grey-600))))
   (:html
    (:head (:title title)
           (:meta :name "viewport" :content "width=device-width, initial-scale=1")
@@ -68,6 +68,7 @@
      (:section
       (:header (:h1.title title))
       (:main (:form
+              (:p "Hiermit beantrage ich")
               (:div.row
                (:div.field
                 (:input :name "name" :type "text")
@@ -104,17 +105,31 @@
                 (:input :name "telefon" :type "text")
                 (:label "Telefon*")))
 
+              (:p "die Mitgliedschaft im SmartCityFarm e.V als")
+
+              (:div.row
+               (:div.field.inline (:input :type "checkbox")
+                                  (:label "ordentliches Mitglied"))
+               (:div.field.inline (:input :type "checkbox")
+                                  (:label "Fördermitglied")))
+
+              (:div.smol (:p "(entsprechendes ankreuzen)"))
+
               (:div.smol
                (:div "* Pflichtfelder : diese Felder müssen ausgefüllt werden!"))
 
-              (:div.disclaimer
-               (:p "Ich habe die Satzung des SmartCityFarm e.V. zur Kenntnis genommen und erkenne sie mit meiner Unterschrift an. Ich werde keinerlei Aktivitäten unternehmen, die der Vereinssatzung sowie den Beschlüssen der Mitgliederversammlung oder des Vorstandes zuwiderlaufen. Ich bin damit einverstanden, 10 EUR als Aufnahmegebühr und 5 EUR als monatliche Gebühr zu zahlen. Ich erkläre mich damit einverstanden, dass meine Daten für vereinsinterne Zwecke erfaßt und elektronisch gespeichert und verarbeitet werden. Mir ist bekannt, dass ich die Mitgliedschaft jederzeit durch eine SCHRIFTLICHE Mitteilung an den Vorstand beenden kann."))
+              (:ul.disclaimer
+               (:li "Ich habe die Satzung des SmartCityFarm e.V. zur Kenntnis genommen und erkenne sie mit meiner
+Unterschrift an.")
+               (:li "Ich erkläre mich damit einverstanden, dass meine Daten gemäß
+Datenschutz-Grundverordnung (DSGVO) für vereinsinterne Zwecke erfasst, elektronisch gespeichert und
+verarbeitet werden.")
+               (:li "Ich bin damit einverstanden, 10 EUR als Aufnahmegebühr und 5 EUR als monatliche
+Gebühr zu zahlen.")
+               (:li "Mir ist bekannt, dass ich die
+Mitgliedschaft jederzeit durch eine SCHRIFTLICHE Mitteilung an den Vorstand beenden kann."))
 
-              (:div
-               (:div.row :style "margin-bottom: 0.4rem;"
-                         (:div.field.inline (:input :type "checkbox")
-                                            (:label "Ich stimme der Zustellung der Einladung per e-mail zu.")))
-               (:div.smol "Für die Aktualität und Erreichbarkeit dieser E-Mail-Adresse ist das Mitglied verantwortlich."))
+              (:div "Ich bitte hiermit um entsprechende Veranlassung und schriftliche Bestätigung der Aufnahme in den Verein.")
 
               (:div.row
                (:div.field (:input :name "ort+datum" :type "text")

@@ -21,7 +21,7 @@
 
     ;; Publish home-page and all its dependencies
     (let ((*already-published-artifacts* nil)
-          (form (make-scf-form "Beitrittsformular")))
+          (form (make-scf-form "Beitrittserklärung")))
       (handler-bind ((file-already-exists #'skip-existing))
         (publish-artifact form www)))
 
