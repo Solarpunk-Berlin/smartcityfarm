@@ -119,7 +119,7 @@
                (:div "* Pflichtfelder : diese Felder müssen ausgefüllt werden!"))
 
               (:ul.disclaimer
-               (:li "Ich habe die Satzung des SmartCityFarm e.V. zur Kenntnis genommen und erkenne sie mit meiner
+               (:li "Ich habe die Satzung und Beitragsordnung des SmartCityFarm e.V. zur Kenntnis genommen und erkenne sie mit meiner
 Unterschrift an.")
                (:li "Ich erkläre mich damit einverstanden, dass meine Daten gemäß
 Datenschutz-Grundverordnung (DSGVO) für vereinsinterne Zwecke erfasst, elektronisch gespeichert und
@@ -135,9 +135,4 @@ Mitgliedschaft jederzeit durch eine SCHRIFTLICHE Mitteilung an den Vorstand been
                (:div.field (:input :name "ort+datum" :type "text")
                            (:label "Ort + Datum*"))
                (:div.field (:input :name "unterschrift" :type "text")
-                           (:label "Unterschrift*")))))
-
-      (:footer
-       (:h2 "Willkommen an Bord")
-       (:p "Als Bestätigung Ihrer Mitgliedschaft bei SmartCityFarm e.V. erhalten Sie in den nächsten Tagen eine Willkommens-E-Mail, in der Sie grundlegende Informationen für neue Mitglieder erhalten.")
-       (:p "Viel Spass und herzlich Willkommen an Bord der SmartCityFarm.")))))))
+                           (:label "Unterschrift*"))))))))))
