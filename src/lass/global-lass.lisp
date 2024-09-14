@@ -63,13 +63,13 @@
 
 (defun add-fonts ()
   (apply #'concatenate
-   'list
-   (mapcar
-    (lambda (font-set)
-      (mapcar
-       (op (embed-artifact-as _ 'font-face :family (car font-set)))
-       (cdr font-set)))
-    fonts)))
+         'list
+         (mapcar
+          (lambda (font-set)
+            (mapcar
+             (op (embed-artifact-as _ 'font-face :family (car font-set)))
+             (cdr font-set)))
+          fonts)))
 
 (defparameter global-css-vars
   '(:--font-text "Fira Sans"
@@ -96,7 +96,7 @@
 
      ((:or blockquote dl figure form ol p pre table ul)
       :margin-bottom (var --scale-2)
-      :overflow auto)
+      :overflow none)
 
      (figcaption :font-size (var --scale-00)
                  :color (var --color-grey-400))
